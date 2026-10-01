@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <title>El Roble de Aritz</title>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="header">
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="El Roble de Aritz" class="logo">
+                </a>
+
+                <nav class="navigation_bar">
+
+                    <div class="wrap">
+
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="carta.html" aria-current="page">Carta</a>
+                            </li>
+                            <li>
+                                <a href="experiencia.html">Experiencia</a>
+                            </li>
+                            <li>
+                                <a href="reservas.html">Reservas</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="descripcion">
+
+                <p class="pretitulo">Carta de temporada</p>
+                <h1 class="titulo">La carta del Roble de Aritz</h1>
+                <p class="subtitulo">Platos pensados para compartir en el centro de la mesa, cocinados al carbón de roble. La carta cambia con la temporada; los precios incluyen IVA.</p>
+            
+            </div>
+
+            <nav class="indice">
+
+                <p>Ir directamente a</p>
+                <ul>
+                    <li>
+                        <a href="#entrantes">Entrantes</a>
+                    </li>
+                    <li>
+                        <a href="#principales">Principales</a>
+                    </li>
+                    <li>
+                        <a href="#postres">Postres</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <section id="entrantes">
+
+                <h2>Entrantes</h2>
+
+                <input type="radio" name="entrante" id="entrante_close" class="radio_entrante" checked>
+                <input type="radio" name="entrante" id="entrante_1" class="radio_entrante">
+                <input type="radio" name="entrante" id="entrante_2" class="radio_entrante">
+                <input type="radio" name="entrante" id="entrante_3" class="radio_entrante">
+                <input type="radio" name="entrante" id="entrante_4" class="radio_entrante">
+                <input type="radio" name="entrante" id="entrante_5" class="radio_entrante">
+
+                <table>
+
+                    <caption>Entrantes de la carta del Roble de Aritz</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Plato</th>
+                            <th>Categoría</th>
+                            <th>Alérgenos</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="entrante_1" class="fila"></label>
+                                Pimientos de Gernika asados
+                            </td>
+                            <td>Entrante · verdura</td>
+                            <td>Ninguno</td>
+                            <td class="precio">9 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="entrante_2" class="fila"></label>
+                                Txipirones a la brasa con su tinta
+                            </td>
+                            <td>Entrante · marisco</td>
+                            <td>Moluscos</td>
+                            <td class="precio">16 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="entrante_3" class="fila"></label>
+                                Tosta de anchoa del Cantábrico
+                            </td>
+                            <td>Entrante · pescado</td>
+                            <td>Gluten, pescado</td>
+                            <td class="precio">7 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="entrante_4" class="fila"></label>
+                                Ensalada templada de bacalao ahumado
+                            </td>
+                            <td>Entrante · pescado</td>
+                            <td>Pescado, huevo</td>
+                            <td class="precio">14 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="entrante_5" class="fila"></label>
+                                Queso idiazabal a la brasa con membrillo
+                            </td>
+                            <td>Entrante · vegetariano</td>
+                            <td>Lácteos, frutos secos</td>
+                            <td class="precio">12 €</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <div class="visor_modal">
+
+                    <label for="entrante_close" class="modal_salir"></label>
+
+                    <div class="contenido_modal">
+
+                        <label for="entrante_close" class="boton_cerrar" title="Cerrado">&times;</label>
+
+                        <div class="entrante info_1">
+
+                            <img src="images/carta/pimientos.png" alt="Pimientos de Gernika asados">
+                            <h3>Pimientos de Gernika asados</h3>
+                            <p>Pimientos de Gernika seleccionados, asados al golpe de brasa</p>
+
+                        </div>
+
+                        <div class="entrante info_2">
+
+                            <img src="images/carta/txipirones.png" alt="Txipirones a la brasa">
+                            <h3>Txipirones a la brasa con su tinta</h3>
+                            <p>Txipirones frescos pescados a potera, marcados en la parrilla con cebolla pochada y su propia tinta tradicional.</p>
+
+                        </div>
+
+                        <div class="entrante info_3">
+
+                            <img src="images/carta/tosta_anchoa.png" alt="Tosta de anchoa del Cantábrico">
+                            <h3>Tosta de anchoa del Cantábrico</h3>
+                            <p>Tosta de pan de masa madre tostado, mantequilla artesana y anchoas del Cantábrico sobadas a mano.</p>
+
+                        </div>
+
+                        <div class="entrante info_4">
+
+                            <img src="images/carta/ensalada_bacalao.png" alt="Ensalada templada de bacalao">
+                            <h3>Ensalada templada de bacalao ahumado</h3>
+                            <p>Láminas de bacalao ahumado sobre canónigos, frutos secos y vinagreta templada de pasas y piñones.</p>
+
+                        </div>
+                            
+                        <div class="entrante info_5">
+
+                            <img src="images/carta/queso_idiazabal.png" alt="Queso idiazabal a la brasa">
+                            <h3>Queso idiazabal a la brasa con membrillo</h3>
+                            <p>Queso Idiazabal D.O. ahumado ligeramente fundido a la brasa, acompañado de dulce de membrillo casero.</p>
+
+                        </div>
+
+                </div>
+
+            </div>
+
+            </section>
+
+            <section id="principales">
+
+                <h2>Principales</h2>
+
+                <input type="radio" name="principal" id="principal_close" class="radio_principal" checked>
+                <input type="radio" name="principal" id="principal_1" class="radio_principal">
+                <input type="radio" name="principal" id="principal_2" class="radio_principal">
+                <input type="radio" name="principal" id="principal_3" class="radio_principal">
+                <input type="radio" name="principal" id="principal_4" class="radio_principal">
+                <input type="radio" name="principal" id="principal_5" class="radio_principal">
+
+                <table>
+
+                    <caption>Platos principales de la carta del Roble de Aritz</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Plato</th>
+                            <th>Categoría</th>
+                            <th>Alérgenos</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="principal_1" class="fila"></label>
+                                Chuletón de vaca vieja (para 2)
+                            </td>
+                            <td>Principal · carne</td>
+                            <td>Ninguno</td>
+                            <td class="precio">68 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="principal_2" class="fila"></label>
+                                Rodaballo entero a la parrilla
+                            </td>
+                            <td>Principal · pescado</td>
+                            <td>Pescado</td>
+                            <td class="precio">42 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="principal_3" class="fila"></label>
+                                Costilla de vacuno 12 horas al carbón
+                            </td>
+                            <td>Principal · carne</td>
+                            <td>Soja</td>
+                            <td class="precio">26 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="principal_4" class="fila"></label>
+                                Arroz meloso de txangurro
+                            </td>
+                            <td>Principal · marisco</td>
+                            <td>Crustáceos, moluscos</td>
+                            <td class="precio">24 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="principal_5" class="fila"></label>
+                                Alcachofas y setas de temporada a la brasa
+                            </td>
+                            <td>Principal · vegetariano</td>
+                            <td>Frutos secos</td>
+                            <td class="precio">19 €</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <div class="visor_modal">
+                    
+                    <label for="principal_close" class="modal_salir"></label>
+
+                    <div class="contenido_modal">
+
+                        <label for="principal_close" class="boton_cerrar" title="Cerrado">&times;</label>
+
+                        <div class="principal info_1">
+
+                            <img src="images/carta/chuleton.png" alt="Chuletón de vaca vieja">
+                            <h3>Chuletón de vaca vieja (para 2)</h3>
+                            <p>Corte madurado durante más de 45 días, asado a la brasa de roble en su punto óptimo y servido con patatas caseras y pimientos de padrón.</p>
+                    
+                        </div>
+
+                        <div class="principal info_2">
+
+                            <img src="images/carta/rodaballo.png" alt="Rodaballo a la parrilla">
+                            <h3>Rodaballo entero a la parrilla</h3>
+                            <p>Pieza entera de lonja abierta a la espalda y elaborada a la parrilla tradicional con su refrito de ajos, guindilla y vinagre de sidra.</p>
+                        
+                        </div>
+
+                        <div class="principal info_3">
+
+                            <img src="images/carta/costilla.png" alt="Costilla de vacuno">
+                            <h3>Costilla de vacuno 12 horas al carbón</h3>
+                            <p>Cocina lenta a baja temperatura durante 12 horas y terminada en el carbón con glaseado de su propio jugo reducido.</p>
+                        
+                        </div>
+
+                        <div class="principal info_4">
+
+                            <img src="images/carta/arroz_txangurro.png" alt="Arroz meloso de txangurro">
+                            <h3>Arroz meloso de txangurro</h3>
+                            <p>Arroz en cazuela preparado con sofrito artesano, desmigado de centollo de pesca local y fondo concentrado de roca.</p>
+                    
+                        </div>
+
+                        <div class="principal info_5">
+
+                            <img src="images/carta/alcachofas_setas.png" alt="Alcachofas y setas a la brasa">
+                            <h3>Alcachofas y setas de temporada a la brasa</h3>
+                            <p>Corazones de alcachofa confitados a baja temperatura con selección de setas silvestres marcadas al fuego y picada de almendra.</p>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="postres">
+
+                <h2>Postres</h2>
+
+                <input type="radio" name="postre" id="postre_close" class="radio_postre" checked>
+                <input type="radio" name="postre" id="postre_1" class="radio_postre">
+                <input type="radio" name="postre" id="postre_2" class="radio_postre">
+                <input type="radio" name="postre" id="postre_3" class="radio_postre">
+                <input type="radio" name="postre" id="postre_4" class="radio_postre">
+
+                <table>
+
+                    <caption>Postres de la carta del Roble de Aritz</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Plato</th>
+                            <th>Categoría</th>
+                            <th>Alérgenos</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="postre_1" class="fila"></label>
+                                Cuajada de oveja con miel de brezo
+                            </td>
+                            <td>Postre · lácteo</td>
+                            <td>Lácteos</td>
+                            <td class="precio">8 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="postre_2" class="fila"></label>
+                                Torrija a la brasa con helado de canela
+                            </td>
+                            <td>Postre · horno</td>
+                            <td>Gluten, huevo, lácteos</td>
+                            <td class="precio">9 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="postre_3" class="fila"></label>
+                                Tarta de queso ahumada
+                            </td>
+                            <td>Postre · lácteo</td>
+                            <td>Lácteos, huevo</td>
+                            <td class="precio">8 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="postre_4" class="fila"></label>
+                                Piña asada con ron y helado de coco
+                            </td>
+                            <td>Postre · fruta</td>
+                            <td>Frutos secos</td>
+                            <td class="precio">9 €</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <div class="visor_modal">
+                    
+                    <label for="postre_close" class="modal_salir"></label>
+
+                    <div class="contenido_modal">
+
+                        <label for="postre_close" class="boton_cerrar" title="Cerrado">&times;</label>
+
+                        <div class="postre info_1">
+
+                            <img src="images/carta/cuajada.png" alt="Cuajada de oveja con miel de brezo">
+                            <h3>Cuajada de oveja con miel de brezo</h3>
+                            <p>Cuajada artesanal de leche de oveja latxa acompañada con miel pura de brezo.</p>
+
+                        </div>
+
+                        <div class="postre info_2">
+
+                            <img src="images/carta/torrija.png" alt="Torrija a la brasa con helado de canela">
+                            <h3>Torrija a la brasa con helado de canela</h3>
+                            <p>Pan brioche infusionado en leche caramelizada, pasado por la brasa y acompañado de helado de canela.</p>
+                        
+                        </div>
+
+                        <div class="postre info_3">
+
+                            <img src="images/carta/tarta_queso.png" alt="Tarta de queso ahumada">
+                            <h3>Tarta de queso ahumada</h3>
+                            <p>Tarta de queso horneada con un sutil toque de humo al carbón de roble y base crujiente.</p>
+                        
+                        </div>
+
+                        <div class="postre info_4">
+
+                            <img src="images/carta/pina_asada.png" alt="Piña asada con ron y helado de coco">
+                            <h3>Piña asada con ron y helado de coco</h3>
+                            <p>Piña natural caramelizada a la brasa con ron añejo y helado artesano de coco.</p>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="datos">
+
+                <div class="direccion">
+
+                    <h2>Dirección</h2>
+                    <p>Calle Cuchillería, 15</p>
+                    <br>
+                    <p>Casco Viejo, 01001 Vitoria</p>
+                    <br>
+                    <p>Álava, España</p>
+                    <br>
+                    <a href="tel:+34945000000">945 00 00 00</a>
+
+                </div>
+
+                <div class="horario">
+
+                    <h2>Horario</h2>
+                    <dl>
+                        <dt>Lun-Vie</dt>
+                        <dd>12:30-15:30 y 20:30-23:00</dd>
+                        <dt>Sáb</dt>
+                        <dd>12:30-16:30 y 20:00-23:30</dd>
+                        <dt>Dom</dt>
+                        <dd>Cerrado</dd>
+                    </dl>
+
+                </div>
+
+                <div class="social">
+
+                    <h2>Síguenos</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/">TikTok</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="legal">
+
+                    <h2>Aviso legal</h2>
+                    <p>El Roble de Aritz S.L. — CIF B00000000. Datos tratados conforme al RGPD. Consulta nuestra política de cancelación de reservas en la sección de reservas.</p>
+                
+                </div>
+
+            </div>
+
+            <div class="fin">
+
+                <p>© 2026 El Roble de Aritz. Todos los derechos reservados.</p>
+                <p>Proyecto académico - Ingeniería Web</p>
+            
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>

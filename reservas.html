@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <title>El Roble de Aritz</title>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="header">
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="El Roble de Aritz" class="logo">
+                </a>
+
+                <nav class="navigation_bar">
+
+                    <div class="wrap">
+
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="carta.html">Carta</a>
+                            </li>
+                            <li>
+                                <a href="experiencia.html">Experiencia</a>
+                            </li>
+                            <li>
+                                <a href="reservas.html" aria-current="page">Reservas</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </header>
+        
+        <main>
+
+            <div class="descripcion">
+
+                <p class="pretitulo">Mesa y eventos privados</p>
+                <h1 class="titulo">Reserva tu mesa</h1>
+                <p class="subtitulo">Rellena el formulario y confirmaremos tu reserva por correo o teléfono en menos de 24 horas. Para grupos de más de diez comensales, usa el apartado de eventos privados.</p>
+            
+            </div>
+
+            <nav class="indice">
+
+                <p>Ir directamente a</p>
+                <ul>
+                    <li>
+                        <a href="#contacto">Datos de contacto</a>
+                    </li>
+                    <li>
+                        <a href="#detalles">Detalles de la reserva</a>
+                    </li>
+                    <li>
+                        <a href="#politica_cancelacion">Política de cancelación</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <section id="formulario">
+
+                <form id="reserva" action="#" method="post">
+
+                    <h2>Formulario de reserva</h2>
+
+                    <fieldset id="contacto">
+
+                        <legend>Datos de contacto</legend>
+                        
+                        <div class="campos">
+                            
+                            <div class="campo">
+
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                            
+                            </div>
+
+                            <div class="campo">
+
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required>
+                            
+                            </div>
+                            
+                            <div class="campo">
+
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="[0-9 +]{9,15}" placeholder="600 000 000" required>
+                            
+                            </div>
+
+                            <div class="campo">
+
+                                <label for="empresa">Empresa u ocasión (opcional)</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Cumpleaños, cena de empresa…">
+                            
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset id="detalles">
+
+                        <legend>Detalles de la reserva</legend>
+                        
+                        <div class="campos">
+                            
+                            <div class="campo">
+
+                                <label for="fecha">Fecha</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            
+                            </div>
+
+                            <div class="campo">
+
+                                <label for="hora">Hora</label>
+                                <input type="time" id="hora" name="hora" required>
+
+                            </div>
+                            
+                            <div class="campo">
+
+                                <label for="comensales">Número de comensales</label>
+                                <select id="comensales" name="comensales" required="">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="1">1 persona</option>
+                                    <option value="2">2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                    <option value="5">5 personas</option>
+                                    <option value="6">6 personas</option>
+                                    <option value="7-10">De 7 a 10 personas</option>
+                                    <option value="evento">Más de 10 (evento privado)</option>
+                                </select>
+
+                            </div>
+
+                            <div class="campo">
+
+                                <label for="documento">Adjuntar documento (eventos privados)</label>
+                                <input type="file" id="documento" name="documento" accept=".pdf,.doc,.docx">
+                                <small class="ayuda">Opcional: propuesta, menú especial o requisitos técnicos. PDF o Word, máximo 5 MB.</small>
+                            
+                            </div>
+
+                        </div>
+
+                        <fieldset id="turno">
+
+                            <legend>Turno</legend>
+
+                            <div class="opciones_grupo">
+
+                                <div class="opcion">
+
+                                    <input type="radio" id="turno_comida" name="turno" value="comida" checked="">
+                                    <label for="turno_comida">Comida</label>
+
+                                </div>
+
+                                <div class="opcion">
+
+                                    <input type="radio" id="turno_cena" name="turno" value="cena">
+                                    <label for="turno_cena">Cena</label>
+
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset id="intolerancias">
+
+                            <legend>Intolerancias y alergias</legend>
+
+                            <div class="opciones_grupo">
+
+                                <div class="opcion">
+
+                                    <input type="checkbox" id="alergia_gluten" name="alergias" value="gluten">
+                                    <label for="alergia_gluten">Gluten</label>
+
+                                </div>
+
+                                <div class="opcion">
+
+                                    <input type="checkbox" id="alergia_lactosa" name="alergias" value="lactosa">
+                                    <label for="alergia_lactosa">Lactosa</label>
+
+                                </div>
+
+                                <div class="opcion">
+
+                                    <input type="checkbox" id="alergia_marisco" name="alergias" value="marisco">
+                                    <label for="alergia_marisco">Marisco</label>
+
+                                </div>
+
+                                <div class="opcion">
+
+                                    <input type="checkbox" id="alergia_frutos_secos" name="alergias" value="frutos_secos">
+                                    <label for="alergia_frutos_secos">Frutos secos</label>
+
+                                </div>
+
+                                <div class="opcion">
+
+                                    <input type="checkbox" id="alergia_huevo" name="alergias" value="huevo">
+                                    <label for="alergia_huevo">Huevo</label>
+
+                                </div>
+
+                            </div>
+                                
+                        </fieldset>
+
+                        <div class="campo_ancho">
+
+                            <label for="observaciones">Observaciones</label>
+                            <textarea id="observaciones" name="observaciones" rows="4" placeholder="Cualquier detalle adicional sobre tu reserva…"></textarea>
+
+                        </div>
+
+                    </fieldset>
+
+                    <div class="form_envio">
+
+                        <button type="submit" class="boton_primario">Confirmar reserva</button>
+                        <p class="ayuda">Al enviar este formulario aceptas nuestra política de cancelación descrita a continuación.</p>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+            <section id="politica_cancelacion">
+                
+                <h2>Política de cancelación</h2>
+                <details>
+
+                    <summary>Condiciones de cancelación y modificación</summary>
+                    <p>Las reservas para mesas de hasta seis personas pueden cancelarse o modificarse sin coste hasta 24 horas antes del servicio. Pasado ese plazo, se aplicará un cargo de 15 € por comensal en concepto de reserva no presentada.</p>
+                    <ul>
+                        <li>Eventos privados: cancelación gratuita hasta 7 días antes del evento.</li>
+                        <li>Menú degustación: se requiere confirmación de asistencia 48 horas antes.</li>
+                        <li>Las modificaciones de horario están sujetas a disponibilidad de sala.</li>
+                    </ul>
+
+                </details>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="datos">
+
+                <div class="direccion">
+
+                    <h2>Dirección</h2>
+                    <p>Calle Cuchillería, 15</p>
+                    <br>
+                    <p>Casco Viejo, 01001 Vitoria</p>
+                    <br>
+                    <p>Álava, España</p>
+                    <br>
+                    <a href="tel:+34945000000">945 00 00 00</a>
+
+                </div>
+
+                <div class="horario">
+
+                    <h2>Horario</h2>
+                    <dl>
+                        <dt>Lun-Vie</dt>
+                        <dd>12:30-15:30 y 20:30-23:00</dd>
+                        <dt>Sáb</dt>
+                        <dd>12:30-16:30 y 20:00-23:30</dd>
+                        <dt>Dom</dt>
+                        <dd>Cerrado</dd>
+                    </dl>
+
+                </div>
+
+                <div class="social">
+
+                    <h2>Síguenos</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/">TikTok</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="legal">
+
+                    <h2>Aviso legal</h2>
+                    <p>El Roble de Aritz S.L. — CIF B00000000. Datos tratados conforme al RGPD. Consulta nuestra política de cancelación de reservas en la sección de reservas.</p>
+                
+                </div>
+
+            </div>
+
+            <div class="fin">
+
+                <p>© 2026 El Roble de Aritz. Todos los derechos reservados.</p>
+                <p>Proyecto académico - Ingeniería Web</p>
+            
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
